@@ -1,45 +1,24 @@
-## base-ui
+## fh-ui
 
-> A magical documentation site generator.
+> Vue + ElementUi 后台管理系统通用组件
 
-## What is it
+#### What is it
 
-docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as website. All you need to do is create an `index.html` to start and [deploy it on GitHub Pages](deploy.md).
+* 封装常用业务组件，eg：通用查询、表格、各种按钮Action操作...
+* 使开发人员更关注数据交互，不必在意通用组件的封装
+* 持续完善中...
 
-See the [Quick start](quickstart.md) for more details.
+### Features
 
-## Features
+* 通用查询组件优化
+* 通用按钮Action组件
+* 脚手架？
+* more...
 
-* No statically built html files
-* Simple and lightweight (~19kB gzipped)
-* Smart full-text search plugin
-* Multiple themes
-* Useful plugin API
-* Emoji support
-* Compatible with IE10+
+### Examples
 
-- Support SSR ([example](https://github.com/QingWei-Li/docsify-ssr-demo))
+点击[快速开始](quickstart.md)查看如何使用.
 
-## Examples
-
-Check out the [Showcase](https://github.com/QingWei-Li/docsify/#showcase) to docsify in use.
-
-# Vuep 使用
-<vuep template="#example"></vuep>
-<script v-pre type="text/x-template" id="example">
-  <template>
-    <div>Hello, {{ name }}!</div>
-  </template>
-
-  <script>
-    module.exports = {
-      data: function () {
-        return { name: 'Vue' }
-      }
-    }
-  </script>
-</script>
-
-## Donate
-
-Please consider donating if you think docsify is helpful to you or that my work is valuable. I am happy if you can help me [buy a cup of coffee](https://github.com/QingWei-Li/donate). :heart:
+### Q&A
+* 工程代码太混乱？
+> 不要在意细节～ -_-!! 刚起步，待优化的点还很多～～
