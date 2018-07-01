@@ -6,7 +6,9 @@
 
 * 组件
 
-  * [更新中...]()
+  * [BtnGroup](btn-group.md)
+  * [BaseSearch](base-search.md)
+  * 更新中...
 
 * 其他
 

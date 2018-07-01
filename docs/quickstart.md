@@ -11,7 +11,7 @@
 
 fh-ui是基于`element-ui`进行的开发，所以你需要提前安装`element-ui`，安装方法请参照`element-ui`[官方文档](http://element.eleme.io/#/zh-CN/component/installation)。
 
-#### 引入 fh-ui 
+#### 引入 fh-ui
 一般在 webpack 入口页面 main.js 中如下配置：
 ```js
 import Vue from 'vue'
@@ -35,6 +35,9 @@ new Vue({
   template: '<App/>',
 });
 ```
+
+#### 按需引入
+由于babel策略调整，暂时没有实现按需引入的方式，后期做好调研之后会进行按需引入的尝试。
 
 #### 特别提醒
 你需要导入fh-ui的样式，即在 `main.js` 或根组件执行 `import fh-ui/lib/static/style.min.css`，该文件包含了对`element-ui`的自定义样式优化，所以请保证它是在引入`element-ui`的样式文件之后引入的。
