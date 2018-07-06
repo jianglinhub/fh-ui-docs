@@ -2,20 +2,15 @@
 
 通用查询组件，封装了基本查询操作。
 
-#### 代码示例
+<iframe width="100%" height="300" src="http://jsfiddle.net/jianglin/rkzpLx0s/11/embedded/result"></iframe>
+
 ```html
 <template>
-  <div class="demo">
-    <base-search :fields="fields" @onSearch="handleSomething"></base-search>
-  </div>
+  <base-search :fields="fields" @onSearch="handleSomething"></base-search>
 </template>
 
 <script>
-  // 引入通用查询组件
-  import SearchSub from './search-sub'
-
   export default {
-    name: 'demo',
     data() {
       return {
         fields: [{
@@ -34,18 +29,14 @@
           value: '北京烤鸭',
           label: '北京烤鸭',
         }],
-      }
-    },
-    components: {
-      // 添加引入的组件
-      SearchSub
+      };
     },
     methods: {
       handleSomething(data) {
-        console.log(data) // eg: [{seqNo: 1, field: 'xx', value: 'xxx', condition: '', and: ''},{...}]
-      }
-    }
-  }
+        console.log(data); // eg: [{seqNo: 1, field: 'xx', value: 'xxx', condition: '', and: ''},{...}]
+      },
+    },
+  };
 </script>
 ```
 
@@ -66,7 +57,7 @@
       <th>-</th>
       <th>[]</th>
   </tr>
-  
+
 </table>
 
 ### Events
@@ -82,5 +73,5 @@
       <th>查询回调方法</th>
       <th>已选择的查询条件</th>
   </tr>
-  
+
 </table>
