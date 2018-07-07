@@ -2,7 +2,7 @@
 
 通用查询组件，封装了基本查询操作。
 
-<iframe width="100%" height="300" src="http://jsfiddle.net/jianglin/rkzpLx0s/11/embedded/result"></iframe>
+<iframe width="100%" height="400" src="http://jsfiddle.net/jianglin/rkzpLx0s/21/embedded/result"></iframe>
 
 ```html
 <template>
@@ -42,7 +42,7 @@
 
 ### Attributes
 
-<table>
+<table style="text-align:left">
   <tr>
     <th style="width: 200px">参数</th>
     <th style="width: 200px">说明</th>
@@ -52,26 +52,25 @@
   </tr>
   <tr>
       <th>fields</th>
-      <th>描述字段儿</th>
+      <th>描述字段</th>
       <th>Array</th>
       <th>-</th>
-      <th>[]</th>
+      <th>-</th>
   </tr>
 
 </table>
 
 ### Events
 
-<table>
+<table style="text-align:left">
   <tr>
     <th style="width: 200px">事件名称	</th>
     <th style="width: 500px">说明</th>
     <th style="width: 200px">回调参数</th>
   </tr>
   <tr>
-      <th>onSearch</th>
-      <th>查询回调方法</th>
-      <th>已选择的查询条件</th>
+    <th>onSearch</th>
+    <th>查询回调方法</th>
+    <th>已选择的查询条件</th>
   </tr>
-
 </table>
