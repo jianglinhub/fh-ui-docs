@@ -2,7 +2,7 @@
 
 通用查询组件，封装了基本查询操作。
 
-<iframe width="100%" height="400" src="http://jsfiddle.net/jianglin/rkzpLx0s/21/embedded/result"></iframe>
+<iframe width="100%" height="400" src="http://jsfiddle.net/jianglin/rkzpLx0s/24/embedded/result"></iframe>
 
 ```html
 <template>

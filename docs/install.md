@@ -13,18 +13,18 @@ $ npm install fh-ui --save
 <!-- 引入element样式库 -->
 <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 <!-- 引入fh-ui样式库 -->
-<link rel="stylesheet" href="http://on7oa5kzv.bkt.clouddn.com/style.min.css">
+<link rel="stylesheet" href="http://on7oa5kzv.bkt.clouddn.com/style.20180708.min.css">
 <!-- 引入vue组件库 -->
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 <!-- 引入element组件库 -->
 <script src="https://unpkg.com/element-ui/lib/index.js"></script>
 <!-- 引入fh-ui组件库 -->
-<script src="http://on7oa5kzv.bkt.clouddn.com/FHUi.min.js"></script>
+<script src="http://on7oa5kzv.bkt.clouddn.com/FHUi.20180708.min.js"></script>
 ```
 
 ### HelloWorld
 通过 CDN 的方式我们可以很容易地使用 fh-ui 写出一个 Hello world 页面。
 
-<iframe width="100%" height="550" src="http://jsfiddle.net/jianglin/rkzpLx0s/11/embedded/html,result"></iframe>
+<iframe width="100%" height="550" src="http://jsfiddle.net/jianglin/rkzpLx0s/24/embedded/html,result"></iframe>
 
 如果您使用了 NPM 安装，并使用 webpack 作为构建工具，请继续阅读[快速上手](quickstart.md)章节。

@@ -4,7 +4,7 @@
 
 #### 左按钮组 btn-left-group
 
-<iframe width="100%" height="400" src="http://jsfiddle.net/jianglin/t36j8ke0/3/embedded/result"></iframe>
+<iframe width="100%" height="400" src="http://jsfiddle.net/jianglin/t36j8ke0/15/embedded/result"></iframe>
 
 ```html
 <template>
@@ -12,7 +12,9 @@
     :btns="leftBtns"
     :options="leftOptions"
     @handleDelClose="handleDelClose"
-    @handleDelConfirm="handleDelConfirm">
+    @handleStartUseClose="handleStartUseClose"
+    @handleDelConfirm="handleDelConfirm"
+    @handleStartUseConfirm="handleStartUseConfirm">
   </btn-left-group>
 </template>
 
@@ -32,7 +34,16 @@
           delOptions: {
             id: '2',
           },
+          startUseOptions: {
+            id: '3',
+          },
           updateOptions: {
+            router: 'testupdate',
+            query: {
+              id: '1',
+            },
+          },
+          checkOptions: {
             router: 'testupdate',
             query: {
               id: '1',
@@ -48,6 +59,12 @@
       handleDelConfirm() {
         console.log('do something after handleDelConfirm!');
       },
+      handleStartUseClose() {
+        console.log('do something after handleStartUseClose!');
+      },
+      handleStartUseConfirm() {
+        console.log('do something after handleStartUseConfirm!');
+      },
     },
   }
 </script>
@@ -55,7 +72,7 @@
 
 #### 右按钮组 btn-right-group
 
-<iframe width="100%" height="200" src="http://jsfiddle.net/jianglin/t36j8ke0/5/embedded/result"></iframe>
+<iframe width="100%" height="200" src="http://jsfiddle.net/jianglin/t36j8ke0/19/embedded/result"></iframe>
 
 ```html
 <template>
@@ -69,7 +86,7 @@
   export default {
     data() {
       return {
-        rightBtns: ['refresh', 'close'],
+        rightBtns: ['refresh', 'close', 'print'],
         rightOptions: {},
       };
     },
@@ -165,6 +182,16 @@
   <tr>
     <th>handleDelConfirm</th>
     <th>确定删除回调方法</th>
+    <th>-</th>
+  </tr>
+  <tr>
+    <th>handleStartUseClose</th>
+    <th>取消启用回调方法</th>
+    <th>-</th>
+  </tr>
+  <tr>
+    <th>handleStartUseConfirm</th>
+    <th>确定启用回调方法</th>
     <th>-</th>
   </tr>
 </table>
