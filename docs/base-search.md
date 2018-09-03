@@ -14,21 +14,33 @@
     data() {
       return {
         fields: [{
-          value: '黄金糕',
-          label: '黄金糕',
+          value: 'normal-key',
+          label: '普通',
         }, {
-          value: '双皮奶',
-          label: '双皮奶',
+          value: 'string-key',
+          label: '测试字符串',
         }, {
-          value: '蚵仔煎',
-          label: '蚵仔煎',
+          value: 'number-key',
+          label: '测试数字',
+          type: 'number',
         }, {
-          value: '龙须面',
-          label: '龙须面',
+          value: 'date-key',
+          label: '测试日期',
+          type: 'date',
         }, {
-          value: '北京烤鸭',
-          label: '北京烤鸭',
-        }],
+          value: 'options-key',
+          label: '测试自定义选项',
+          type: 'options',
+          options: [{
+            value: '值1',
+            label: '选项1',
+          }, {
+            value: '值2',
+            label: '选项2',
+          }, {
+            value: '值3',
+            label: '选项3',
+          }],
       };
     },
     methods: {
